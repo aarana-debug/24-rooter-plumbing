@@ -895,13 +895,28 @@
 
     /* ── SMALL PHONES ────────────────────────────────────── */
     @media (max-width: 480px) {
-      .hero-right { display: none; }
-      .hero-inner { grid-template-columns: 1fr !important; padding: 70px 5% 36px; }
-      .hero-btns { flex-direction: column; }
+      /* ── HERO ── */
+      .hero-inner { grid-template-columns: 1fr !important; padding: 76px 5% 24px; }
+      /* Show hero-right but only the mascot — no logo card, no badge */
+      .hero-right {
+        display: flex !important;
+        flex-direction: column; align-items: center;
+        margin-top: 16px; padding-bottom: 12px;
+      }
+      .logo-badge-emergency { display: none; }
+      .logo-card { display: none; }
+      .plumber-mascot { width: 88px; }
+      .mascot-shadow { width: 34px; height: 10px; }
+      .pipe-ground { width: 100px; height: 8px; }
+      /* Tighten hero text */
+      .hero-text p { font-size: 15px; margin-top: 14px; }
+      .hero-btns { flex-direction: column; margin-top: 24px; }
       .btn-primary, .btn-outline { width: 100%; text-align: center; padding: 14px 20px; }
-      .hero-stats { gap: 12px; }
+      .hero-stats { gap: 12px; margin-top: 28px; }
       .stat-num { font-size: 28px; }
       .stat-label { font-size: 11px; }
+
+      /* ── SECTIONS ── */
       section { padding: 52px 5%; }
       .specials { padding: 52px 5%; }
       .founders { padding: 52px 5%; }
