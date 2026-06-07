@@ -234,13 +234,13 @@
     .section-title {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: clamp(32px, 4vw, 52px); font-weight: 900;
-      line-height: 1.05; max-width: 640px;
+      line-height: 1.05; max-width: 640px; margin-left: auto; margin-right: auto;
     }
     .section-title .accent-red  { color: var(--red); }
     .section-title .accent-blue { color: var(--blue); }
     .section-sub {
       margin-top: 16px; color: var(--gray);
-      font-size: 16px; line-height: 1.7; max-width: 580px;
+      font-size: 16px; line-height: 1.7; max-width: 580px; margin-left: auto; margin-right: auto;
     }
 
     /* ─── TICKER BAND ────────────────────────────────────── */
@@ -285,7 +285,7 @@
     /* ─── SERVICES ────────────────────────────────────────── */
     .services { background: var(--navy); }
     .services-inner { max-width: 1200px; margin: 0 auto; }
-    .services-header { margin-bottom: 56px; }
+    .services-header { margin-bottom: 56px; text-align: center; }
     .services-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -450,7 +450,7 @@
     /* ─── SERVICE AREAS ───────────────────────────────────── */
     .areas { background: var(--navy); }
     .areas-inner { max-width: 1200px; margin: 0 auto; }
-    .areas-header { margin-bottom: 48px; }
+    .areas-header { margin-bottom: 48px; text-align: center; }
     .cities-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -470,7 +470,7 @@
 
     /* ─── PHOTO CAROUSEL ──────────────────────────────────── */
     .carousel-section { background: var(--navy); overflow: hidden; position: relative; padding: 80px 0 60px; }
-    .carousel-section-head { max-width: 1200px; margin: 0 auto; padding: 0 5% 32px; }
+    .carousel-section-head { max-width: 1200px; margin: 0 auto; padding: 0 5% 32px; text-align: center; }
     .carousel-outer { max-width: 1200px; margin: 0 auto; padding: 0 5%; }
     .carousel-wrap { position: relative; overflow: hidden; border-radius: 12px; }
     .carousel-track {
@@ -605,7 +605,7 @@
     /* ─── GOOGLE REVIEWS ──────────────────────────────────── */
     .testimonials { background: #0b0f1a; }
     .testimonials-inner { max-width: 1200px; margin: 0 auto; }
-    .testimonials-header { margin-bottom: 40px; }
+    .testimonials-header { margin-bottom: 40px; text-align: center; }
     .g-rating-bar {
       display: flex; align-items: center; gap: 24px; flex-wrap: wrap;
       background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.08);
@@ -708,7 +708,10 @@
       align-items: start;
     }
     .contact-info { padding-top: 8px; }
-    .contact-info .section-title { margin-bottom: 24px; }
+    .contact-info .section-title { margin-bottom: 24px; margin-left: 0; margin-right: 0; }
+    .contact-info .section-sub { margin-left: 0; margin-right: 0; }
+    .why-inner .section-title { margin-left: 0; margin-right: 0; }
+    .why-inner .section-sub { margin-left: 0; margin-right: 0; }
     .contact-detail {
       display: flex; gap: 16px; align-items: flex-start;
       margin-bottom: 20px;
