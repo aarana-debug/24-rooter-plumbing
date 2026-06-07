@@ -882,7 +882,7 @@
       /* ── CAROUSEL — full-bleed mobile ── */
       .carousel-outer { padding: 0; }
       .carousel-wrap { border-radius: 0; }
-      .carousel-slide { min-width: 100%; height: 72vw; min-height: 240px; max-height: 380px; border-radius: 0; }
+      .carousel-slide { min-width: 100vw; height: 72vw; min-height: 240px; max-height: 380px; border-radius: 0; }
       .carousel-btn { display: none; }
       .slide-caption { opacity: 1; transform: translateY(0); padding: 40px 16px 14px; }
       .slide-caption-title { font-size: 14px; }
@@ -1880,6 +1880,10 @@
       function getMax()      { return TOTAL - getVisible(); }
       function slideWidth()  { return (wrap.offsetWidth - GAP * (getVisible() - 1)) / getVisible(); }
       function stepPx()      { return slideWidth() + GAP; }
+      function setSlideSizes() {
+        const w = slideWidth();
+        track.querySelectorAll('.carousel-slide').forEach(function(s) { s.style.minWidth = w + 'px'; });
+      }
 
       function buildDots() {
         const n = getMax() + 1;
@@ -1920,8 +1924,9 @@
         if (Math.abs(diff) > 40) { stopAuto(); diff > 0 ? next() : prev(); startAuto(); }
       }, { passive: true });
 
-      window.addEventListener('resize', function() { buildDots(); goTo(Math.min(current, getMax())); });
+      window.addEventListener('resize', function() { setSlideSizes(); buildDots(); goTo(Math.min(current, getMax())); });
 
+      setSlideSizes();
       buildDots();
       startAuto();
     })();
