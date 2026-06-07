@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plumbing Services | 24 Rooter & Plumbing Inc. | Claremont, CA</title>
+  <meta name="description" content="Full-service plumbing in Claremont, CA and all of SoCal. Emergency plumbing, drain cleaning, water heaters, hydro jetting, repiping, sewer lines & more. Licensed, 24/7, free estimates — (626) 322-1538." />
+  <meta name="keywords" content="plumbing services Claremont CA, emergency plumber, drain cleaning, water heater installation, hydro jetting, sewer line repair, repiping, leak detection, garbage disposal, commercial plumbing Southern California" />
+  <link rel="canonical" href="https://24rooterplumbing.com/services" />
+  <meta property="og:title" content="Plumbing Services | 24 Rooter & Plumbing Inc." />
+  <meta property="og:description" content="Complete plumbing services for homes and businesses in Claremont, CA and all of Southern California. 24/7 emergency response. Free estimates." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://24rooterplumbing.com/services" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Barlow+Condensed:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="city-styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://24rooterplumbing.com/#business",
+        "name": "24 Rooter & Plumbing Inc.",
+        "image": "https://24rooterplumbing.com/24rooterplumbing.webp",
+        "telephone": "+16263221538",
+        "url": "https://24rooterplumbing.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3628 Lynoak Dr #201",
+          "addressLocality": "Claremont",
+          "addressRegion": "CA",
+          "postalCode": "91711",
+          "addressCountry": "US"
+        },
+        "openingHours": "Mo-Su 00:00-23:59",
+        "priceRange": "$$",
+        "hasCredential": "CSLB #1126081"
+      },
+      {
+        "@type": "Service",
+        "serviceType": "Emergency Plumbing",
+        "provider": {"@id": "https://24rooterplumbing.com/#business"},
+        "areaServed": {"@type": "State", "name": "California"},
+        "description": "24/7 emergency plumbing services including burst pipes, major leaks, flooding, and gas line emergencies."
+      },
+      {
+        "@type": "Service",
+        "serviceType": "Drain Cleaning",
+        "provider": {"@id": "https://24rooterplumbing.com/#business"},
+        "areaServed": {"@type": "State", "name": "California"},
+        "description": "Professional drain cleaning using snaking, hydro jetting, and camera inspection for all drain types."
+      },
+      {
+        "@type": "Service",
+        "serviceType": "Water Heater Installation and Repair",
+        "provider": {"@id": "https://24rooterplumbing.com/#business"},
+        "areaServed": {"@type": "State", "name": "California"},
+        "description": "Tank and tankless water heater installation, repair, and replacement with same-day service available."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://24rooterplumbing.com"},
+          {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://24rooterplumbing.com/services"}
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ── SERVICES PAGE EXTRAS ── */
+    .services-hero { padding: 130px 5% 80px; background: linear-gradient(135deg, #12161f 0%, #1a2035 60%, #0e1420 100%); position: relative; overflow: hidden; }
+    .services-hero::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(42,171,238,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(42,171,238,0.04) 1px, transparent 1px); background-size: 48px 48px; }
+    .services-hero::after { content: ''; position: absolute; top: -100px; right: -100px; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(217,31,58,0.12) 0%, transparent 70%); }
+    .services-hero-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 1; }
+
+    /* Service detail sections */
+    .service-detail { padding: 80px 5%; }
+    .service-detail:nth-child(even) { background: var(--navy2); }
+    .service-detail-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .service-detail:nth-child(even) .service-detail-inner { direction: rtl; }
+    .service-detail:nth-child(even) .service-detail-content { direction: ltr; }
+    .service-detail:nth-child(even) .service-detail-visual { direction: ltr; }
+
+    .service-detail-content .section-label { margin-bottom: 12px; }
+    .service-detail-content h2 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(28px, 3.5vw, 44px); font-weight: 900; line-height: 1.1; margin-bottom: 16px; }
+    .service-detail-content p { color: rgba(255,255,255,0.7); font-size: 15px; line-height: 1.75; margin-bottom: 14px; }
+    .service-detail-content p:last-of-type { margin-bottom: 24px; }
+
+    .service-feature-list { list-style: none; padding: 0; margin: 0 0 28px; display: flex; flex-direction: column; gap: 10px; }
+    .service-feature-list li { display: flex; align-items: flex-start; gap: 10px; color: rgba(255,255,255,0.8); font-size: 14px; line-height: 1.5; }
+    .service-feature-list li::before { content: '✓'; color: var(--blue); font-weight: 800; font-size: 13px; margin-top: 1px; flex-shrink: 0; }
+
+    .service-detail-visual { background: var(--navy2); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 40px 36px; display: flex; flex-direction: column; gap: 20px; }
+    .service-detail:nth-child(even) .service-detail-visual { background: var(--navy); }
+    .service-visual-icon { font-size: 56px; line-height: 1; }
+    .service-visual-stat { display: flex; flex-direction: column; gap: 4px; border-top: 1px solid rgba(255,255,255,0.07); padding-top: 20px; }
+    .service-visual-stat-num { font-family: 'Barlow Condensed', sans-serif; font-size: 36px; font-weight: 900; color: var(--blue); }
+    .service-visual-stat-label { color: var(--gray); font-size: 13px; }
+    .service-visual-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+    .service-visual-tag { background: rgba(42,171,238,0.1); border: 1px solid rgba(42,171,238,0.2); color: rgba(255,255,255,0.75); font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 100px; }
+    .service-visual-tag.red { background: rgba(217,31,58,0.1); border-color: rgba(217,31,58,0.2); }
+
+    /* Services index grid at top */
+    .services-index { padding: 56px 5%; background: var(--navy2); border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .services-index-inner { max-width: 1100px; margin: 0 auto; }
+    .services-index-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-top: 32px; }
+    .services-index-link { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 14px 18px; display: flex; align-items: center; gap: 10px; text-decoration: none; color: rgba(255,255,255,0.8); font-size: 13px; font-weight: 500; transition: border-color .2s, color .2s, background .2s; }
+    .services-index-link:hover { border-color: var(--blue); color: var(--blue); background: rgba(42,171,238,0.06); }
+    .services-index-icon { font-size: 20px; flex-shrink: 0; }
+
+    /* Areas served strip */
+    .areas-strip { padding: 56px 5%; background: var(--navy); }
+    .areas-strip-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+    .areas-strip h2 { font-family: 'Barlow Condensed', sans-serif; font-size: 32px; font-weight: 900; margin-bottom: 8px; }
+    .areas-strip p { color: var(--gray); font-size: 14px; margin-bottom: 28px; }
+    .areas-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+    .area-link { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; padding: 8px 16px; font-size: 13px; color: rgba(255,255,255,0.65); text-decoration: none; transition: border-color .2s, color .2s; }
+    .area-link:hover { border-color: var(--blue); color: var(--blue); }
+
+    @media (max-width: 768px) {
+      .services-hero { padding: 100px 5% 60px; }
+      .service-detail { padding: 60px 5%; }
+      .service-detail-inner { grid-template-columns: 1fr; gap: 36px; direction: ltr !important; }
+      .services-index-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html"><img src="24rooterplumbing.webp" alt="24 Rooter Plumbing Inc." /></a>
+  <ul class="nav-links">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#why-us">Why Us</a></li>
+    <li><a href="index.html#areas">Service Areas</a></li>
+    <li><a href="index.html#reviews">Reviews</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="tel:6263221538">📞 (626) 322-1538</a>
+</nav>
+
+<!-- HERO -->
+<div class="services-hero">
+  <div class="services-hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span>Plumbing Services</span>
+    </nav>
+    <div class="city-badge">🔧 Licensed · Insured · CSLB #1126081</div>
+    <h1>
+      Complete <span class="accent-red">Plumbing</span><br/>
+      <span class="accent-blue">Services</span> in Southern California
+    </h1>
+    <p class="lead">
+      From a dripping faucet to a burst sewer main — 24 Rooter & Plumbing Inc. handles every plumbing job with the same commitment: fast response, honest pricing, and work done right the first time.
+    </p>
+    <div class="hero-btns">
+      <a href="tel:6263221538" class="btn-primary">Call Now — (626) 322-1538</a>
+      <a href="index.html#contact" class="btn-outline">Get a Free Estimate</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item"><div class="stat-num">24/7</div><div class="stat-label">Emergency Service</div></div>
+      <div class="stat-item"><div class="stat-num">10<sup>+</sup></div><div class="stat-label">Years Experience</div></div>
+      <div class="stat-item"><div class="stat-num">Free</div><div class="stat-label">Estimates Always</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- QUICK JUMP INDEX -->
+<div class="services-index">
+  <div class="services-index-inner">
+    <div class="section-label">All Services</div>
+    <h2 class="section-title" style="margin-bottom:0;">Jump to Any Service</h2>
+    <div class="services-index-grid">
+      <a class="services-index-link" href="#emergency"><span class="services-index-icon">🚨</span>Emergency Plumbing</a>
+      <a class="services-index-link" href="#drain-cleaning"><span class="services-index-icon">🚿</span>Drain Cleaning</a>
+      <a class="services-index-link" href="#water-heaters"><span class="services-index-icon">💧</span>Water Heaters</a>
+      <a class="services-index-link" href="#hydro-jetting"><span class="services-index-icon">🌊</span>Hydro Jetting</a>
+      <a class="services-index-link" href="#leak-detection"><span class="services-index-icon">🔍</span>Leak Detection</a>
+      <a class="services-index-link" href="#sewer-line"><span class="services-index-icon">🪠</span>Sewer Line Services</a>
+      <a class="services-index-link" href="#repiping"><span class="services-index-icon">🔩</span>Repiping</a>
+      <a class="services-index-link" href="#toilets"><span class="services-index-icon">🚽</span>Toilet Repair</a>
+      <a class="services-index-link" href="#garbage-disposal"><span class="services-index-icon">🗑️</span>Garbage Disposal</a>
+      <a class="services-index-link" href="#fixtures"><span class="services-index-icon">🛁</span>Fixture Installation</a>
+      <a class="services-index-link" href="#commercial"><span class="services-index-icon">🏢</span>Commercial Plumbing</a>
+      <a class="services-index-link" href="#water-filtration"><span class="services-index-icon">🛡️</span>Water Filtration</a>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="trust-item"><div class="trust-icon">🏆</div><div class="trust-text"><strong>Licensed & Insured</strong><span>CSLB #1126081</span></div></div>
+    <div class="trust-item"><div class="trust-icon">⚡</div><div class="trust-text"><strong>24/7 Emergency</strong><span>We answer every call</span></div></div>
+    <div class="trust-item"><div class="trust-icon">💰</div><div class="trust-text"><strong>Free Estimates</strong><span>No obligation quotes</span></div></div>
+    <div class="trust-item"><div class="trust-icon">⭐</div><div class="trust-text"><strong>5-Star Rated</strong><span>381+ Google Reviews</span></div></div>
+    <div class="trust-item"><div class="trust-icon">🤝</div><div class="trust-text"><strong>Family Owned</strong><span>Santiago & Gabriel</span></div></div>
+  </div>
+</div>
+
+<!-- 1. EMERGENCY PLUMBING -->
+<section class="service-detail" id="emergency">
+  <div class="service-detail-inner">
+    <div class="service-detail-content">
+      <div class="section-label">24/7 Service</div>
+      <h2>Emergency <span class="accent-red">Plumbing</span></h2>
+      <p>When a pipe bursts, a drain backs up into your home, or you smell gas — every minute counts. Our team is on call around the clock, 365 days a year, with fully stocked trucks ready to roll the moment you call.</p>
+      <p>We serve all of Claremont and surrounding Southern California cities with some of the fastest response times in the area. No after-hours surcharges — our pricing is the same day or night.</p>
+      <ul class="service-feature-list">
+        <li>Burst and frozen pipe repair</li>
+        <li>Major flooding and water intrusion</li>
+        <li>Sewer backups and overflows</li>
+        <li>Gas line leaks (call immediately)</li>
+        <li>Water heater failures</li>
+        <li>No extra charge for nights, weekends, or holidays</li>
+      </ul>
+      <div class="hero-btns">
+        <a href="tel:6263221538" class="btn-primary">Call Now — (626) 322-1538</a>
+        <a href="index.html#contact" class="btn-outline">Get a Free Estimate</a>
+        <a href="emergency-plumbing.html" class="btn-outline">Learn More →</a>
+      </div>
+    </div>
+    <div class="service-detail-visual">
+      <div class="service-visual-icon">🚨</div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">24/7</div>
+        <div class="service-visual-stat-label">Always available — including holidays</div>
+      </div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">30–60 min</div>
+        <div class="service-visual-stat-label">Typical response time in Claremont area</div>
+      </div>
+      <div class="service-visual-tags">
+        <span class="service-visual-tag red">Emergency Response</span>
+        <span class="service-visual-tag">No Surcharge</span>
+        <span class="service-visual-tag">Fully Stocked Trucks</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. DRAIN CLEANING -->
+<section class="service-detail" id="drain-cleaning">
+  <div class="service-detail-inner">
+    <div class="service-detail-content">
+      <div class="section-label">Drains & Clogs</div>
+      <h2>Drain <span class="accent-blue">Cleaning</span></h2>
+      <p>Slow or blocked drains are more than an inconvenience — left untreated, they lead to pipe damage, sewage backup, and expensive repairs. We clear all types of clogs using professional-grade equipment your hardware store snake can't match.</p>
+      <p>Whether it's a kitchen sink clogged with grease, a shower drain packed with hair, or a main line backing up due to tree roots — we diagnose the cause and clear it completely.</p>
+      <ul class="service-feature-list">
+        <li>Kitchen and bathroom sink drains</li>
+        <li>Shower and tub drains</li>
+        <li>Floor drains and laundry lines</li>
+        <li>Main sewer line clogs</li>
+        <li>Root intrusion clearing</li>
+        <li>Camera inspection available to find the root cause</li>
+      </ul>
+      <div class="hero-btns">
+        <a href="tel:6263221538" class="btn-primary">Call Now — (626) 322-1538</a>
+        <a href="index.html#contact" class="btn-outline">Get a Free Estimate</a>
+        <a href="drain-cleaning.html" class="btn-outline">Learn More →</a>
+      </div>
+    </div>
+    <div class="service-detail-visual">
+      <div class="service-visual-icon">🚿</div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">Same Day</div>
+        <div class="service-visual-stat-label">Service available in most cases</div>
+      </div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">All Drain Types</div>
+        <div class="service-visual-stat-label">Residential & commercial lines</div>
+      </div>
+      <div class="service-visual-tags">
+        <span class="service-visual-tag">Snaking</span>
+        <span class="service-visual-tag">Hydro Jetting</span>
+        <span class="service-visual-tag">Camera Inspection</span>
+        <span class="service-visual-tag red">Root Intrusion</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. WATER HEATERS -->
+<section class="service-detail" id="water-heaters">
+  <div class="service-detail-inner">
+    <div class="service-detail-content">
+      <div class="section-label">Hot Water Solutions</div>
+      <h2>Water Heater <span class="accent-red">Service</span></h2>
+      <p>No hot water is an emergency. We install, repair, and replace all makes and models of tank and tankless water heaters — with same-day service available for most jobs in the Claremont area.</p>
+      <p>Thinking about going tankless? We'll walk you through the benefits, size the right unit for your home, and handle the full installation including gas and venting — all with a free upfront estimate.</p>
+      <ul class="service-feature-list">
+        <li>Tank water heater installation and replacement</li>
+        <li>Tankless water heater installation and service</li>
+        <li>All major brands: Bradford White, Rheem, Navien, Rinnai, AO Smith</li>
+        <li>Pilot light, thermostat, and anode rod repair</li>
+        <li>Sediment flushing and annual maintenance</li>
+        <li>Emergency same-day water heater replacement</li>
+      </ul>
+      <div class="hero-btns">
+        <a href="tel:6263221538" class="btn-primary">Call Now — (626) 322-1538</a>
+        <a href="index.html#contact" class="btn-outline">Get a Free Estimate</a>
+        <a href="water-heater-service.html" class="btn-outline">Learn More →</a>
+      </div>
+    </div>
+    <div class="service-detail-visual">
+      <div class="service-visual-icon">💧</div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">Tank & Tankless</div>
+        <div class="service-visual-stat-label">All makes and models serviced</div>
+      </div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">Same Day</div>
+        <div class="service-visual-stat-label">Replacement available in most areas</div>
+      </div>
+      <div class="service-visual-tags">
+        <span class="service-visual-tag">Installation</span>
+        <span class="service-visual-tag">Repair</span>
+        <span class="service-visual-tag">Replacement</span>
+        <span class="service-visual-tag red">Emergency Service</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. HYDRO JETTING -->
+<section class="service-detail" id="hydro-jetting">
+  <div class="service-detail-inner">
+    <div class="service-detail-content">
+      <div class="section-label">Deep Drain Cleaning</div>
+      <h2>Hydro <span class="accent-blue">Jetting</span></h2>
+      <p>Snaking clears a clog. Hydro jetting cleans the entire pipe. Using water pressure up to 4,000 PSI, we blast away years of grease buildup, mineral scale, and root intrusion that a standard snake can't touch.</p>
+      <p>Hydro jetting is the preferred method for restaurants, commercial kitchens, and any home with recurring clogs. It leaves pipes in like-new condition and dramatically reduces future blockages.</p>
+      <ul class="service-feature-list">
+        <li>Up to 4,000 PSI water pressure</li>
+        <li>Removes grease, scale, sediment, and roots</li>
+        <li>Ideal for restaurants and commercial kitchens</li>
+        <li>Restores full pipe diameter and flow</li>
+        <li>Extends the life of your drain system</li>
+        <li>Camera inspection before and after available</li>
+      </ul>
+      <div class="hero-btns">
+        <a href="tel:6263221538" class="btn-primary">Call Now — (626) 322-1538</a>
+        <a href="index.html#contact" class="btn-outline">Get a Free Estimate</a>
+        <a href="hydro-jetting.html" class="btn-outline">Learn More →</a>
+      </div>
+    </div>
+    <div class="service-detail-visual">
+      <div class="service-visual-icon">🌊</div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">4,000 PSI</div>
+        <div class="service-visual-stat-label">Maximum water pressure capacity</div>
+      </div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">100%</div>
+        <div class="service-visual-stat-label">Pipe interior cleaned, not just cleared</div>
+      </div>
+      <div class="service-visual-tags">
+        <span class="service-visual-tag">Grease Removal</span>
+        <span class="service-visual-tag">Scale Buildup</span>
+        <span class="service-visual-tag red">Root Intrusion</span>
+        <span class="service-visual-tag">Commercial</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. LEAK DETECTION -->
+<section class="service-detail" id="leak-detection">
+  <div class="service-detail-inner">
+    <div class="service-detail-content">
+      <div class="section-label">Find It Before It Gets Worse</div>
+      <h2>Leak Detection <span class="accent-red">&amp; Repair</span></h2>
+      <p>A hidden water leak can silently destroy your home's structure, promote mold growth, and inflate your water bill for months before you notice anything. We use professional detection methods to locate leaks behind walls, under slabs, and underground — without unnecessary demolition.</p>
+      <p>Slab leaks are especially common in Southern California due to expansive soil and seismic activity. We specialize in slab leak detection and offer multiple repair methods to minimize disruption to your home.</p>
+      <ul class="service-feature-list">
+        <li>Non-invasive leak detection technology</li>
+        <li>Slab leak detection and repair</li>
+        <li>Wall and ceiling leaks located precisely</li>
+        <li>Underground supply line leaks</li>
+        <li>Pinhole leak repair in copper pipes</li>
+        <li>Full pipe repair or rerouting as needed</li>
+      </ul>
+      <div class="hero-btns">
+        <a href="tel:6263221538" class="btn-primary">Call Now — (626) 322-1538</a>
+        <a href="index.html#contact" class="btn-outline">Get a Free Estimate</a>
+        <a href="leak-detection.html" class="btn-outline">Learn More →</a>
+      </div>
+    </div>
+    <div class="service-detail-visual">
+      <div class="service-visual-icon">🔍</div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">Non-Invasive</div>
+        <div class="service-visual-stat-label">Locate leaks without tearing up floors</div>
+      </div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">Slab Leaks</div>
+        <div class="service-visual-stat-label">Specialist in SoCal slab leak repair</div>
+      </div>
+      <div class="service-visual-tags">
+        <span class="service-visual-tag red">Slab Leaks</span>
+        <span class="service-visual-tag">Wall Leaks</span>
+        <span class="service-visual-tag">Underground Lines</span>
+        <span class="service-visual-tag">Pinhole Leaks</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. SEWER LINE -->
+<section class="service-detail" id="sewer-line">
+  <div class="service-detail-inner">
+    <div class="service-detail-content">
+      <div class="section-label">Camera Inspection & Repair</div>
+      <h2>Sewer Line <span class="accent-blue">Services</span></h2>
+      <p>Sewer problems are the most disruptive plumbing issues a homeowner can face. We handle everything from a simple sewer cleaning to a full sewer line replacement — and we start every job with a camera inspection so you know exactly what you're dealing with.</p>
+      <p>In older Claremont and SoCal neighborhoods, aging clay or cast-iron sewer lines are common culprits. Tree root intrusion is also widespread on Southern California's tree-lined streets. We fix it all.</p>
+      <ul class="service-feature-list">
+        <li>Video camera sewer inspection</li>
+        <li>Sewer line cleaning and clearing</li>
+        <li>Root intrusion removal</li>
+        <li>Sewer line repair and spot replacement</li>
+        <li>Full sewer line replacement</li>
+        <li>Trenchless sewer repair (where applicable)</li>
+      </ul>
+      <div class="hero-btns">
+        <a href="tel:6263221538" class="btn-primary">Call Now — (626) 322-1538</a>
+        <a href="index.html#contact" class="btn-outline">Get a Free Estimate</a>
+        <a href="sewer-line-services.html" class="btn-outline">Learn More →</a>
+      </div>
+    </div>
+    <div class="service-detail-visual">
+      <div class="service-visual-icon">🪠</div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">Camera First</div>
+        <div class="service-visual-stat-label">We diagnose before we dig</div>
+      </div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">Trenchless</div>
+        <div class="service-visual-stat-label">Minimal yard disruption options available</div>
+      </div>
+      <div class="service-visual-tags">
+        <span class="service-visual-tag">Camera Inspection</span>
+        <span class="service-visual-tag red">Root Intrusion</span>
+        <span class="service-visual-tag">Trenchless Repair</span>
+        <span class="service-visual-tag">Full Replacement</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. REPIPING -->
+<section class="service-detail" id="repiping">
+  <div class="service-detail-inner">
+    <div class="service-detail-content">
+      <div class="section-label">Whole-Home Solution</div>
+      <h2><span class="accent-red">Repiping</span> &amp; Pipe Replacement</h2>
+      <p>Galvanized steel pipes installed before the 1970s corrode from the inside out — restricting water pressure, discoloring water, and eventually failing altogether. If your home has galvanized pipes, repiping is the most cost-effective long-term fix.</p>
+      <p>We repipe homes using modern copper or PEX piping, which is durable, flexible, and resistant to corrosion. Most whole-home repipes are completed in one to two days with minimal wall damage.</p>
+      <ul class="service-feature-list">
+        <li>Galvanized pipe removal and replacement</li>
+        <li>Copper and PEX repiping options</li>
+        <li>Whole-home and partial repiping</li>
+        <li>Improved water pressure and quality</li>
+        <li>Minimal wall and floor disruption</li>
+        <li>Free whole-home assessment and estimate</li>
+      </ul>
+      <div class="hero-btns">
+        <a href="tel:6263221538" class="btn-primary">Call Now — (626) 322-1538</a>
+        <a href="index.html#contact" class="btn-outline">Get a Free Estimate</a>
+        <a href="repiping.html" class="btn-outline">Learn More →</a>
+      </div>
+    </div>
+    <div class="service-detail-visual">
+      <div class="service-visual-icon">🔩</div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">1–2 Days</div>
+        <div class="service-visual-stat-label">Typical whole-home repipe timeline</div>
+      </div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">Copper & PEX</div>
+        <div class="service-visual-stat-label">Modern materials, built to last decades</div>
+      </div>
+      <div class="service-visual-tags">
+        <span class="service-visual-tag red">Galvanized Removal</span>
+        <span class="service-visual-tag">Copper</span>
+        <span class="service-visual-tag">PEX</span>
+        <span class="service-visual-tag">Whole Home</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. TOILETS -->
+<section class="service-detail" id="toilets">
+  <div class="service-detail-inner">
+    <div class="service-detail-content">
+      <div class="section-label">Repair & Installation</div>
+      <h2>Toilet Repair <span class="accent-blue">&amp; Installation</span></h2>
+      <p>A running toilet can waste up to 200 gallons of water per day. A leaking toilet base can silently rot your subfloor. Whether your toilet is running, leaking, clogged, cracked, or simply old — we fix or replace it fast.</p>
+      <p>We also handle new toilet installations for bathroom remodels and upgrades. We carry and install all major brands and can help you select a water-efficient model that saves on your water bill.</p>
+      <ul class="service-feature-list">
+        <li>Running toilet diagnosis and repair</li>
+        <li>Wax ring and flange replacement</li>
+        <li>Fill valve, flapper, and flush valve repair</li>
+        <li>Toilet clog removal (beyond basic plunging)</li>
+        <li>New toilet installation — any brand or model</li>
+        <li>Water-efficient low-flow toilet upgrades</li>
+      </ul>
+      <div class="hero-btns">
+        <a href="tel:6263221538" class="btn-primary">Call Now — (626) 322-1538</a>
+        <a href="index.html#contact" class="btn-outline">Get a Free Estimate</a>
+        <a href="toilet-repair.html" class="btn-outline">Learn More →</a>
+      </div>
+    </div>
+    <div class="service-detail-visual">
+      <div class="service-visual-icon">🚽</div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">200 gal/day</div>
+        <div class="service-visual-stat-label">Water wasted by a running toilet</div>
+      </div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">Same Day</div>
+        <div class="service-visual-stat-label">Most toilet repairs completed same visit</div>
+      </div>
+      <div class="service-visual-tags">
+        <span class="service-visual-tag red">Running Toilet</span>
+        <span class="service-visual-tag">Leak Repair</span>
+        <span class="service-visual-tag">Installation</span>
+        <span class="service-visual-tag">Low-Flow Upgrade</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. GARBAGE DISPOSAL -->
+<section class="service-detail" id="garbage-disposal">
+  <div class="service-detail-inner">
+    <div class="service-detail-content">
+      <div class="section-label">Kitchen Plumbing</div>
+      <h2>Garbage Disposal <span class="accent-red">Services</span></h2>
+      <p>Garbage disposal problems are one of the most common kitchen plumbing calls we get. Whether yours is humming but not spinning, leaking from the bottom, or completely dead — we can usually diagnose and fix it on the same visit.</p>
+      <p>When replacement is the better option, we install all major brands including InSinkErator, Moen, and Waste King — quickly and at a fair price, including disposal of the old unit.</p>
+      <ul class="service-feature-list">
+        <li>Garbage disposal repair and reset</li>
+        <li>Jam removal and blade clearing</li>
+        <li>Leak repair (top, side, and bottom)</li>
+        <li>New disposal installation</li>
+        <li>All major brands stocked and installed</li>
+        <li>Old unit hauled away at no extra charge</li>
+      </ul>
+      <div class="hero-btns">
+        <a href="tel:6263221538" class="btn-primary">Call Now — (626) 322-1538</a>
+        <a href="index.html#contact" class="btn-outline">Get a Free Estimate</a>
+        <a href="garbage-disposal.html" class="btn-outline">Learn More →</a>
+      </div>
+    </div>
+    <div class="service-detail-visual">
+      <div class="service-visual-icon">🗑️</div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">Same Visit</div>
+        <div class="service-visual-stat-label">Most repairs done on the first call</div>
+      </div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">All Brands</div>
+        <div class="service-visual-stat-label">InSinkErator, Moen, Waste King & more</div>
+      </div>
+      <div class="service-visual-tags">
+        <span class="service-visual-tag">Repair</span>
+        <span class="service-visual-tag">Installation</span>
+        <span class="service-visual-tag red">Leak Fix</span>
+        <span class="service-visual-tag">All Brands</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. FIXTURE INSTALLATION -->
+<section class="service-detail" id="fixtures">
+  <div class="service-detail-inner">
+    <div class="service-detail-content">
+      <div class="section-label">Upgrades & Replacements</div>
+      <h2>Fixture <span class="accent-blue">Installation</span></h2>
+      <p>From a simple faucet swap to a full bathroom remodel — we install and replace all plumbing fixtures with clean, leak-free workmanship. Supply your own fixture or let us source the right one for your home.</p>
+      <p>We also handle the supply line and shut-off valve work that often gets overlooked, ensuring everything upstream is sound before we call the job done.</p>
+      <ul class="service-feature-list">
+        <li>Kitchen and bathroom faucet installation</li>
+        <li>Showerhead and shower valve replacement</li>
+        <li>Bathtub faucet and spout repair or replacement</li>
+        <li>Sink replacement (drop-in, undermount, pedestal)</li>
+        <li>Supply line and shut-off valve replacement</li>
+        <li>Laundry and utility sink installation</li>
+      </ul>
+      <div class="hero-btns">
+        <a href="tel:6263221538" class="btn-primary">Call Now — (626) 322-1538</a>
+        <a href="index.html#contact" class="btn-outline">Get a Free Estimate</a>
+        <a href="fixture-installation.html" class="btn-outline">Learn More →</a>
+      </div>
+    </div>
+    <div class="service-detail-visual">
+      <div class="service-visual-icon">🛁</div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">All Fixtures</div>
+        <div class="service-visual-stat-label">Kitchen, bath, laundry & more</div>
+      </div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">Supply & Install</div>
+        <div class="service-visual-stat-label">We source it or install yours</div>
+      </div>
+      <div class="service-visual-tags">
+        <span class="service-visual-tag">Faucets</span>
+        <span class="service-visual-tag">Showers</span>
+        <span class="service-visual-tag">Sinks</span>
+        <span class="service-visual-tag red">Valves & Lines</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. COMMERCIAL PLUMBING -->
+<section class="service-detail" id="commercial">
+  <div class="service-detail-inner">
+    <div class="service-detail-content">
+      <div class="section-label">Business & Multi-Unit</div>
+      <h2>Commercial <span class="accent-red">Plumbing</span></h2>
+      <p>We provide commercial plumbing services for restaurants, office buildings, retail spaces, apartment complexes, and multi-unit properties throughout Southern California. Commercial plumbing demands faster response and higher capacity — we deliver both.</p>
+      <p>Property managers and business owners rely on us for responsive service, transparent pricing, and work that meets California commercial plumbing code. We also offer scheduled maintenance to prevent costly emergency calls.</p>
+      <ul class="service-feature-list">
+        <li>Restaurant and commercial kitchen plumbing</li>
+        <li>Multi-unit apartment plumbing</li>
+        <li>Office and retail space plumbing</li>
+        <li>Grease trap installation and cleaning</li>
+        <li>Commercial water heater systems</li>
+        <li>Scheduled maintenance contracts available</li>
+      </ul>
+      <div class="hero-btns">
+        <a href="tel:6263221538" class="btn-primary">Call Now — (626) 322-1538</a>
+        <a href="index.html#contact" class="btn-outline">Get a Free Estimate</a>
+        <a href="commercial-plumbing.html" class="btn-outline">Learn More →</a>
+      </div>
+    </div>
+    <div class="service-detail-visual">
+      <div class="service-visual-icon">🏢</div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">Licensed</div>
+        <div class="service-visual-stat-label">CA commercial plumbing code compliant</div>
+      </div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">Maintenance</div>
+        <div class="service-visual-stat-label">Scheduled contracts keep costs down</div>
+      </div>
+      <div class="service-visual-tags">
+        <span class="service-visual-tag">Restaurants</span>
+        <span class="service-visual-tag red">Multi-Unit</span>
+        <span class="service-visual-tag">Grease Traps</span>
+        <span class="service-visual-tag">Maintenance</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12. WATER FILTRATION -->
+<section class="service-detail" id="water-filtration">
+  <div class="service-detail-inner">
+    <div class="service-detail-content">
+      <div class="section-label">Water Quality</div>
+      <h2>Water Filtration <span class="accent-blue">&amp; Softeners</span></h2>
+      <p>Southern California is known for its hard water — high in calcium and magnesium that builds up in pipes, clogs fixtures, shortens water heater life, and leaves residue on dishes and skin. A whole-home water softener or filtration system solves it at the source.</p>
+      <p>We install and service whole-home water softeners, sediment filters, and reverse osmosis drinking water systems. We'll assess your water quality and recommend the right solution for your home and budget.</p>
+      <ul class="service-feature-list">
+        <li>Whole-home water softener installation</li>
+        <li>Salt-based and salt-free softener systems</li>
+        <li>Sediment and carbon block filtration</li>
+        <li>Under-sink reverse osmosis systems</li>
+        <li>Water quality testing and assessment</li>
+        <li>Filter cartridge replacement and maintenance</li>
+      </ul>
+      <div class="hero-btns">
+        <a href="tel:6263221538" class="btn-primary">Call Now — (626) 322-1538</a>
+        <a href="index.html#contact" class="btn-outline">Get a Free Estimate</a>
+        <a href="water-filtration.html" class="btn-outline">Learn More →</a>
+      </div>
+    </div>
+    <div class="service-detail-visual">
+      <div class="service-visual-icon">🛡️</div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">Hard Water Fix</div>
+        <div class="service-visual-stat-label">SoCal's #1 water quality problem</div>
+      </div>
+      <div class="service-visual-stat">
+        <div class="service-visual-stat-num">Whole Home</div>
+        <div class="service-visual-stat-label">Treat every tap in the house</div>
+      </div>
+      <div class="service-visual-tags">
+        <span class="service-visual-tag">Water Softeners</span>
+        <span class="service-visual-tag red">Hard Water</span>
+        <span class="service-visual-tag">Reverse Osmosis</span>
+        <span class="service-visual-tag">Filtration</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <div class="cta-banner-inner">
+    <h2>Need a Plumber? Call Now.</h2>
+    <p>We're local, licensed, and available 24/7. Free estimates on every job — no pressure, no hidden fees.</p>
+    <a class="cta-phone" href="tel:6263221538">(626) 322-1538</a>
+    <p class="cta-sub">Proudly serving Claremont and all of Southern California</p>
+  </div>
+</div>
+
+<!-- AREAS SERVED -->
+<div class="areas-strip">
+  <div class="areas-strip-inner">
+    <h2>Serving All of Southern California</h2>
+    <p>Our Claremont-based team covers a wide area — click your city for local service info.</p>
+    <div class="areas-links">
+      <a class="area-link" href="plumber-claremont-ca.html">Claremont</a>
+      <a class="area-link" href="plumber-monrovia-ca.html">Monrovia</a>
+      <a class="area-link" href="plumber-montclair-ca.html">Montclair</a>
+      <a class="area-link" href="plumber-san-dimas-ca.html">San Dimas</a>
+      <a class="area-link" href="plumber-la-verne-ca.html">La Verne</a>
+      <a class="area-link" href="plumber-pomona-ca.html">Pomona</a>
+      <a class="area-link" href="plumber-upland-ca.html">Upland</a>
+      <a class="area-link" href="plumber-ontario-ca.html">Ontario</a>
+      <a class="area-link" href="plumber-glendora-ca.html">Glendora</a>
+      <a class="area-link" href="plumber-brea-ca.html">Brea</a>
+      <a class="area-link" href="plumber-yorba-linda-ca.html">Yorba Linda</a>
+      <a class="area-link" href="plumber-fullerton-ca.html">Fullerton</a>
+      <a class="area-link" href="plumber-placentia-ca.html">Placentia</a>
+      <a class="area-link" href="plumber-walnut-ca.html">Walnut</a>
+      <a class="area-link" href="plumber-rancho-cucamonga-ca.html">Rancho Cucamonga</a>
+      <a class="area-link" href="plumber-city-of-industry-ca.html">City of Industry</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <img class="footer-logo" src="24rooterplumbing.webp" alt="24 Rooter Plumbing Inc." />
+      <p class="footer-about">Family-owned by Santiago Grajeda and Gabriel Robles. Serving Claremont and Southern California with integrity for over a decade.</p>
+      <span class="footer-license">CSLB #1126081</span>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#emergency">Emergency Plumbing</a></li>
+        <li><a href="#drain-cleaning">Drain Cleaning</a></li>
+        <li><a href="#water-heaters">Water Heaters</a></li>
+        <li><a href="#hydro-jetting">Hydro Jetting</a></li>
+        <li><a href="#sewer-line">Sewer Line Services</a></li>
+        <li><a href="#repiping">Repiping</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#why-us">Why Choose Us</a></li>
+        <li><a href="index.html#areas">Service Areas</a></li>
+        <li><a href="index.html#contact">Free Estimate</a></li>
+        <li><a href="tel:6263221538">(626) 322-1538</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 24 Rooter & Plumbing Inc. · Claremont, CA · CSLB #1126081</p>
+    <a href="privacy-policy.html">Privacy Policy</a>
+  </div>
+</footer>
+
+</body>
+</html>
