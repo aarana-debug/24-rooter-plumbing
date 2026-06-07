@@ -243,23 +243,44 @@
       font-size: 16px; line-height: 1.7; max-width: 580px;
     }
 
-    /* ─── TRUST BAR ───────────────────────────────────────── */
-    .trust-bar {
-      background: var(--navy2);
+    /* ─── TICKER BAND ────────────────────────────────────── */
+    .ticker-band {
+      background: #0b0f1a;
       border-top: 1px solid rgba(255,255,255,0.06);
       border-bottom: 1px solid rgba(255,255,255,0.06);
-      padding: 28px 5%;
+      overflow: hidden;
+      position: relative;
+      cursor: default;
+      user-select: none;
     }
-    .trust-bar-inner {
-      display: flex; align-items: center; justify-content: space-between;
-      max-width: 1200px; margin: 0 auto; flex-wrap: wrap; gap: 20px;
+    .ticker-band::before,
+    .ticker-band::after {
+      content: ''; position: absolute; top: 0; bottom: 0; z-index: 2;
+      pointer-events: none; width: 120px;
     }
-    .trust-item {
-      display: flex; align-items: center; gap: 12px;
+    .ticker-band::before { left: 0; background: linear-gradient(to right, #0b0f1a 30%, transparent); }
+    .ticker-band::after  { right: 0; background: linear-gradient(to left,  #0b0f1a 30%, transparent); }
+
+    .ticker-track {
+      display: flex; align-items: center;
+      width: max-content;
+      animation: tickerScroll 34s linear infinite;
     }
-    .trust-icon { font-size: 24px; }
-    .trust-text strong { display: block; font-size: 14px; font-weight: 700; }
-    .trust-text span   { color: var(--gray); font-size: 12px; }
+    .ticker-track:hover { animation-play-state: paused; }
+
+    @keyframes tickerScroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .ticker-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 18px 36px; white-space: nowrap;
+    }
+    .ticker-icon { font-size: 20px; flex-shrink: 0; }
+    .ticker-label { font-size: 14px; font-weight: 700; color: rgba(255,255,255,0.9); }
+    .ticker-sub { font-size: 12px; color: rgba(255,255,255,0.38); margin-left: 4px; }
+    .ticker-sep { color: var(--red); font-size: 7px; flex-shrink: 0; opacity: 0.65; }
 
     /* ─── SERVICES ────────────────────────────────────────── */
     .services { background: var(--navy); }
@@ -840,9 +861,6 @@
       .pipe-ground { width: 200px; }
       .hero-stats { gap: 16px; flex-wrap: wrap; }
 
-      /* ── TRUST BAR ── */
-      .trust-bar-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
-
       /* ── LAYOUT ── */
       .why-grid { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
@@ -1148,44 +1166,43 @@
     </div>
   </section>
 
-  <!-- TRUST BAR -->
-  <div class="trust-bar">
-    <div class="trust-bar-inner">
-      <div class="trust-item">
-        <div class="trust-icon">🏆</div>
-        <div class="trust-text">
-          <strong>Licensed & Insured</strong>
-          <span>CSLB #1126081</span>
-        </div>
-      </div>
-      <div class="trust-item">
-        <div class="trust-icon">⚡</div>
-        <div class="trust-text">
-          <strong>24/7 Emergency Service</strong>
-          <span>We answer every call</span>
-        </div>
-      </div>
-      <div class="trust-item">
-        <div class="trust-icon">💰</div>
-        <div class="trust-text">
-          <strong>Free Estimates</strong>
-          <span>No obligation quotes</span>
-        </div>
-      </div>
-      <div class="trust-item">
-        <div class="trust-icon">🤝</div>
-        <div class="trust-text">
-          <strong>Family Owned</strong>
-          <span>Santiago & Gabriel</span>
-        </div>
-      </div>
-      <div class="trust-item">
-        <div class="trust-icon">⭐</div>
-        <div class="trust-text">
-          <strong>5-Star Rated</strong>
-          <span>Hundreds of happy customers</span>
-        </div>
-      </div>
+  <!-- TICKER BAND -->
+  <div class="ticker-band">
+    <div class="ticker-track">
+      <!-- Set 1 -->
+      <div class="ticker-item"><span class="ticker-icon">🏆</span><span class="ticker-label">Licensed &amp; Insured</span><span class="ticker-sub">CSLB #1126081</span></div>
+      <span class="ticker-sep">◆</span>
+      <div class="ticker-item"><span class="ticker-icon">⚡</span><span class="ticker-label">24/7 Emergency Service</span><span class="ticker-sub">We answer every call</span></div>
+      <span class="ticker-sep">◆</span>
+      <div class="ticker-item"><span class="ticker-icon">⭐</span><span class="ticker-label">5-Star Rated</span><span class="ticker-sub">381+ Google Reviews</span></div>
+      <span class="ticker-sep">◆</span>
+      <div class="ticker-item"><span class="ticker-icon">💰</span><span class="ticker-label">Free Estimates</span><span class="ticker-sub">No obligation quotes</span></div>
+      <span class="ticker-sep">◆</span>
+      <div class="ticker-item"><span class="ticker-icon">🤝</span><span class="ticker-label">Family Owned</span><span class="ticker-sub">Santiago &amp; Gabriel</span></div>
+      <span class="ticker-sep">◆</span>
+      <div class="ticker-item"><span class="ticker-icon">🛡️</span><span class="ticker-label">Fully Licensed &amp; Bonded</span><span class="ticker-sub">Your peace of mind</span></div>
+      <span class="ticker-sep">◆</span>
+      <div class="ticker-item"><span class="ticker-icon">⏱️</span><span class="ticker-label">Same-Day Service</span><span class="ticker-sub">Fast response guaranteed</span></div>
+      <span class="ticker-sep">◆</span>
+      <div class="ticker-item"><span class="ticker-icon">🔧</span><span class="ticker-label">Upfront Pricing</span><span class="ticker-sub">No hidden fees, ever</span></div>
+      <span class="ticker-sep">◆</span>
+      <!-- Set 2 — duplicate for seamless infinite loop -->
+      <div class="ticker-item"><span class="ticker-icon">🏆</span><span class="ticker-label">Licensed &amp; Insured</span><span class="ticker-sub">CSLB #1126081</span></div>
+      <span class="ticker-sep">◆</span>
+      <div class="ticker-item"><span class="ticker-icon">⚡</span><span class="ticker-label">24/7 Emergency Service</span><span class="ticker-sub">We answer every call</span></div>
+      <span class="ticker-sep">◆</span>
+      <div class="ticker-item"><span class="ticker-icon">⭐</span><span class="ticker-label">5-Star Rated</span><span class="ticker-sub">381+ Google Reviews</span></div>
+      <span class="ticker-sep">◆</span>
+      <div class="ticker-item"><span class="ticker-icon">💰</span><span class="ticker-label">Free Estimates</span><span class="ticker-sub">No obligation quotes</span></div>
+      <span class="ticker-sep">◆</span>
+      <div class="ticker-item"><span class="ticker-icon">🤝</span><span class="ticker-label">Family Owned</span><span class="ticker-sub">Santiago &amp; Gabriel</span></div>
+      <span class="ticker-sep">◆</span>
+      <div class="ticker-item"><span class="ticker-icon">🛡️</span><span class="ticker-label">Fully Licensed &amp; Bonded</span><span class="ticker-sub">Your peace of mind</span></div>
+      <span class="ticker-sep">◆</span>
+      <div class="ticker-item"><span class="ticker-icon">⏱️</span><span class="ticker-label">Same-Day Service</span><span class="ticker-sub">Fast response guaranteed</span></div>
+      <span class="ticker-sep">◆</span>
+      <div class="ticker-item"><span class="ticker-icon">🔧</span><span class="ticker-label">Upfront Pricing</span><span class="ticker-sub">No hidden fees, ever</span></div>
+      <span class="ticker-sep">◆</span>
     </div>
   </div>
 
