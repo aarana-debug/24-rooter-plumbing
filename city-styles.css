@@ -93,6 +93,15 @@ section{padding:80px 5%}
 .reviewer-name strong{display:block;font-size:13px;font-weight:700}
 .reviewer-name span{color:var(--gray);font-size:11px}
 
+/* MAP SECTION */
+.map-section{background:var(--navy2);padding:80px 5%}
+.map-wrap{border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.1);box-shadow:0 8px 32px rgba(0,0,0,0.45);margin-top:36px}
+.map-details{display:flex;flex-wrap:wrap;justify-content:center;gap:20px 40px;margin-top:24px}
+.map-detail-item{color:rgba(255,255,255,0.7);font-size:14px;display:flex;align-items:center;gap:8px}
+.map-detail-item strong{color:var(--white)}
+.map-detail-item a{color:var(--blue);text-decoration:none}
+.map-detail-item a:hover{text-decoration:underline}
+
 /* CTA BANNER */
 .cta-banner{background:linear-gradient(135deg,var(--red) 0%,#9b1528 100%);padding:70px 5%;text-align:center;position:relative;overflow:hidden}
 .cta-banner::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.04) 1px,transparent 1px);background-size:32px 32px}
