@@ -226,7 +226,7 @@
     .pipe-ground::after  { right: 18px; }
 
     /* ─── SECTION SHARED ──────────────────────────────────── */
-    section { padding: 96px 5%; }
+    section { padding: 96px 5%; scroll-margin-top: 72px; }
     .section-label {
       color: var(--blue); font-size: 12px; font-weight: 700;
       letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px;
@@ -316,12 +316,20 @@
     .service-card h3 { font-size: 19px; font-weight: 700; margin-bottom: 10px; }
     .service-card p  { color: var(--gray); font-size: 14px; line-height: 1.6; }
     .service-link {
-      display: inline-flex; align-items: center; gap: 6px;
-      margin-top: 20px; color: var(--blue); font-size: 14px;
-      font-weight: 600; text-decoration: none;
-      transition: gap .2s;
+      display: inline-flex; align-items: center; gap: 8px;
+      margin-top: 20px; color: var(--white); font-size: 13px;
+      font-weight: 700; text-decoration: none; letter-spacing: .3px;
+      background: rgba(42,171,238,0.12);
+      border: 1px solid rgba(42,171,238,0.3);
+      padding: 9px 16px; border-radius: 8px;
+      transition: background .2s, border-color .2s, gap .2s;
     }
-    .service-link:hover { gap: 10px; }
+    .service-link:hover { background: rgba(42,171,238,0.22); border-color: var(--blue); gap: 12px; }
+    .service-link[href^="tel"] {
+      background: rgba(217,31,58,0.12);
+      border-color: rgba(217,31,58,0.3);
+    }
+    .service-link[href^="tel"]:hover { background: rgba(217,31,58,0.22); border-color: var(--red); }
 
     /* ─── SPECIALS ────────────────────────────────────────── */
     .specials { background: #07090f; padding: 100px 5%; position: relative; overflow: hidden; }
